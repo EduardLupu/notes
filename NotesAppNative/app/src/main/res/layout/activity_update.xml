@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_grey"
+    tools:context=".UpdateActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_grey"
+        android:clickable="true"
+        android:src="@drawable/baseline_arrow_back_ios_new_24"
+        app:tint="@color/orange"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_grey"
+        android:clickable="true"
+        android:src="@drawable/baseline_delete_24"
+        app:tint="@color/orange"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="90dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_grey"
+        android:clickable="true"
+        android:src="@drawable/baseline_save_24"
+        app:tint="@color/orange"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:id="@+id/updateTextViewTitleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="24sp"
+        android:layout_below="@+id/backButton"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <!-- Title EditText -->
+    <EditText
+        android:id="@+id/updateEditTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_the_title"
+        android:layout_below="@+id/updateTextViewTitleLabel"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/orange_border"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingBottom="16dp"
+        android:backgroundTint="@color/light_grey"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp" />
+
+    <!-- Content Label -->
+    <TextView
+        android:id="@+id/updateTextViewContentLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="24sp"
+        android:layout_below="@+id/updateEditTextTitle"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <!-- Content EditText -->
+    <EditText
+        android:id="@+id/updateEditTextContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updateTextViewContentLabel"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/orange_border"
+        android:backgroundTint="@color/light_grey"
+        android:fontFamily="@font/poppins_bold"
+        android:hint="@string/enter_the_content"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="400dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+
+</RelativeLayout>

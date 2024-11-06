@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">NotesAppNative</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title">Title</string>
+    <string name="enter_the_content">Type something...</string>
+    <string name="content">Content</string>
+    <string name="enter_the_title">Enter the title</string>
+    <string name="notes">Notes</string>
+    <string name="add_button">Add button</string>
+    <string name="create_date">Created at</string>
+    <string name="last_update">Last update</string>
+    <string name="id">ID</string>
+    <string name="search">Search...</string>
+    <string name="no_notes">No notes</string>
+</resources>
